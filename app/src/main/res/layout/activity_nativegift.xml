@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.alin.gogogo.activity.ScenicspotTicket"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#108E01"
+        >
+        <ImageView
+            android:id="@+id/homecatory_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:src="@mipmap/back"
+            android:clickable="true"
+            android:onClick="Clickbt"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="特产礼品"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:id="@+id/gogo"
+            />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@mipmap/home_find"
+            android:layout_marginRight="10dp"
+            android:onClick="Clickbt"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/whole_city"
+            android:entries="@array/nanjing"
+            />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/whole_theme"
+            android:entries="@array/nativrgift_theme"
+            />
+        <Spinner
+            android:id="@+id/cornerprice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/whole"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/myposition"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent"
+            android:hint="正在获取您的位置..."
+            android:gravity="center|left"
+            android:layout_marginLeft="2dp"
+            />
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:onClick="Clickbt"
+            android:background="@mipmap/set_up_refresh"
+            />
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_listView_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+
+
+
+
+
+
+</LinearLayout>

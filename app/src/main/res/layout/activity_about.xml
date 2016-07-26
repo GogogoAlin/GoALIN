@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alin.gogogo.activity.AboutActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#108E01">
+
+        <ImageView
+            android:id="@+id/input_about_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@mipmap/input_blessing_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollView_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:src="@mipmap/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="                                   车辆安全驾驶注意事项
+       为确保安全驾驶，必须遵守以下注意事项。否则容易引发重大事故，造成人员严重受伤甚至死亡。
+
+  1.发动机冷却液低温警告灯熄之前请勿用力踩下油门踏板。 由于暖机不足，容易导致未燃烧气体异常燃烧并损坏三元催化装臵。
+
+  2.驾驶车辆前，请务必确认所车门均已关闭。否则在行车过程中车门容易突然打开，造成严盆意外事故。如果任一车门未关牢，仪表上会出现车门未关警告提示。
+
+  3．前风挡玻璃下缘的进气口堆积雪、落叶时，应及时清除。否则将无法吸入新鲜空气，导致车内换气不足。下雨时车内温度升高，雾气将附在车窗玻璃上，影响驾驶员视野。
+
+  4．停车状态下调节方向盘后，确认其是否处于锁定状态。   如果方向盘角度没有锁定，则在行车过程中容易突然发生变化，造成意外事故。
+
+  5．不要在驾驶员脚部、座椅下臵任何物品。   放臵在驾驶员脚部或座椅下的物品容易夹在制动踏板和油门踏板下，导致驾驶员无法踩下制动踏板和油门踏板，从而引发意外事故。另外，还会影响到座椅位臵调节，或无法锁定座椅，容易造成意外事故。
+
+  6．请勿在副驾驶员座椅或后排员座椅上放臵任何物品。   车辆紧急制动或紧急转向时，座椅上的物品可能会飞出而触碰到乘员或使物品受损，并且这些物品将分散驾驶员的注意力，容易造成意外事故。
+
+  7．请勿在车辆上放臵装有燃油容器或喷罐等。如果不慎引火，则容易酿成火灾。
+
+  8.如果行车前打开过发动机舱，则应确认舱盖是否处于锁定状态。   如果发动机舱盖未锁好，则在行车过程中舱盖容易突然打开，从而造成意外事故。
+
+  9．以下状态表明车辆出现故障如果继续驾驶，则不仅会影响行驶性能，还容易造成意外事故。
+           a．出现异、异味或振动时  b．方向盘操纵感觉异常时  c．制动液不足时
+           d．地面上有漏油痕迹时   e．仪表、指示灯、警告灯、灯具等异常时 （包括水箱温度，机油，电池和ABS等）
+  10．严禁酒后驾驶。  法律定严禁酒后驾驶。
+         酒后驾驶非常危险，微量酒精也会影响到驾驶人员的判断力、视力及注意力，容易造成严重事故。"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">GOGOGO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="nanjing">
+        <item>全市</item>
+        <item>200米</item>
+        <item>500米</item>
+        <item>1000米</item>
+        <item>2000米</item>
+        <item>5000米</item>
+    </string-array>
+
+    <string-array name="whole">
+        <item>全部</item>
+        <item>离我最近</item>
+        <item>价格最低</item>
+        <item>价格最高</item>
+        <item>免费</item>
+    </string-array>
+    <string-array name="level">
+        <item>全部档次</item>
+        <item>商务酒店</item>
+        <item>快捷酒店</item>
+        <item>家庭客栈</item>
+        <item>星级酒店</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="theme">
+        <item>全部主题</item>
+        <item>田园风光</item>
+        <item>主题体验</item>
+        <item>名人故居</item>
+        <item>动植物园</item>
+        <item>森林公园</item>
+        <item>特色街区</item>
+        <item>高校校园</item>
+        <item>市民广场</item>
+        <item>博物馆园</item>
+        <item>陵园</item>
+        <item>公园</item>
+    </string-array>
+    <string-array name="themefood">
+        <item>全部美食</item>
+        <item>小吃快餐</item>
+        <item>江浙菜</item>
+        <item>火锅</item>
+        <item>西点</item>
+        <item>清真美食</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="nativrgift_theme">
+        <item>全部主题</item>
+        <item>本地特产</item>
+        <item>文创礼品</item>
+        <item>纪念品</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="cornerprice">
+        <item>全部</item>
+        <item>离我最近</item>
+        <item>价格最低</item>
+        <item>价格最高</item>
+        <item>免费</item>
+    </string-array>
+
+</resources>

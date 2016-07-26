@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThreeDActivity">
+    <LinearLayout
+        android:id="@+id/linear_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#008B00"
+        >
+       <ImageView
+           android:id="@+id/three_back"
+           android:layout_width="30dp"
+           android:layout_height="40dp"
+           android:src="@mipmap/back"
+           android:clickable="true"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3D导览"
+            android:textSize="25sp"
+            android:layout_marginLeft="100dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_3d"
+    android:layout_below="@id/linear_three"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lv_3d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

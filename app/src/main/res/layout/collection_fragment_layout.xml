@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#108E01">
+
+        <ImageView
+            android:id="@+id/iv_collection_sliding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:src="@mipmap/home_category" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收藏"
+            android:textColor="#ffffff"
+            android:textSize="17sp"></TextView>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_collection"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_sencePoint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="景点" />
+
+        <RadioButton
+            android:id="@+id/rb_hotel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+
+            android:gravity="center"
+            android:text="酒店" />
+
+        <RadioButton
+            android:id="@+id/rb_food"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="美食" />
+
+        <RadioButton
+            android:id="@+id/rb_relax"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="休闲" />
+
+        <RadioButton
+            android:id="@+id/rb_local_food"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="特产" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/collecction_second_fragment_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+</LinearLayout>

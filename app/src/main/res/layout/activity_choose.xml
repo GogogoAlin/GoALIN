@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alin.gogogo.activity.ChooseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#108E01">
+
+        <ImageView
+            android:id="@+id/homecatory_back_choose"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/gogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="城市选择"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_already_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="已开通"/>
+                <Button
+                    android:id="@+id/btn_jiangsu_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="江苏"/>
+                <Button
+                    android:id="@+id/btn_hebei_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="河北"/>
+                <Button
+                    android:id="@+id/btn_bejing_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="北京"/>
+                <Button
+                    android:id="@+id/btn_tianjin_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="天津"/>
+                <Button
+                    android:id="@+id/btn_shanxi_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="山西"/>
+                <Button
+                    android:id="@+id/btn_changchun_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="长春"/>
+                <Button
+                    android:id="@+id/btn_shanghai_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="上海"/>
+                <Button
+                    android:id="@+id/btn_liaoning_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="辽宁"/>
+                <Button
+                    android:id="@+id/btn_zhejiang_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:text="浙江"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <GridView
+            android:id="@+id/gv_citys"
+            android:numColumns="2"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scrollbars="none"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

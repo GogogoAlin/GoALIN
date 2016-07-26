@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_goodname_PreOrder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="goodname"
+    android:textSize="20sp"
+    />
+<TextView
+    android:id="@+id/tv_price_PreOrder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="goodprice"
+    android:textSize="20sp"
+    />
+<TextView
+    android:id="@+id/tv_count_PreOrder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="门票数count"
+    android:textSize="20sp"
+    />
+<TextView
+    android:id="@+id/tv_username_PreOrder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="用户名"
+    android:textSize="20sp"
+    />
+<TextView
+    android:id="@+id/tv_phone_PreOrder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="手机号"
+    android:textSize="20sp"
+    />
+<TextView
+    android:id="@+id/tv_pay_PreOrder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="支付总金"
+    android:textSize="20sp"
+    />
+
+</LinearLayout>

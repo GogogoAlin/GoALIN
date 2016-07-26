@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_imgList_location_item"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goodsName_location_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tv_goodsName_location_collection" />
+        <TextView
+            android:id="@+id/tv_shopName_location_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tv_shopName_location_collection" />
+        <TextView
+            android:id="@+id/tv_price_location_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tv_price_location_collection" />
+        <TextView
+            android:id="@+id/tv_goodAppraiseNum_location_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tv_goodAppraiseNum_location_collection" />
+    </LinearLayout>
+
+</LinearLayout>

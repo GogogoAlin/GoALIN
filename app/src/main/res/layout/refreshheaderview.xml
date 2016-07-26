@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--吕静-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@mipmap/home_top_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:id="@+id/more_city"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南京"
+            android:clickable="true"
+            android:id="@+id/tv_citys_header"
+            android:textColor="#ffffff"
+            />
+        <ImageView
+            android:id="@+id/arror_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_arror"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/service"
+        android:layout_below="@id/more_city"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+
+        >
+        <Button
+            android:id="@+id/ticket"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@mipmap/home_attraction_tickets"
+            />
+        <Button
+            android:id="@+id/voice"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@mipmap/home_voice_guide"
+            />
+        <Button
+            android:id="@+id/guild_3d"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@mipmap/home_3d_tour"
+            />
+        <Button
+            android:id="@+id/more_service"
+            android:layout_width="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@mipmap/home_more_service"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/service"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/text"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="景点门票"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="语音导游"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3D导览"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="更多服务"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/text"
+        android:id="@+id/text_line"
+        android:layout_width="match_parent"
+        android:background="#ffffffff"
+        android:layout_height="1dp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/text_line"
+      android:gravity="center"
+      android:background="#00000000"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="5dp"
+      >
+      <Button
+          android:id="@+id/home_beauty"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawableLeft="@mipmap/home_beauty_small"
+          android:text="美景"
+          android:textColor="#ffffff"
+          android:background="#00000000"
+          />
+
+      <Button
+          android:id="@+id/home_food"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawableLeft="@mipmap/home_food_small"
+          android:text="美食"
+          android:textColor="#ffffff"
+          android:background="#00000000"
+          />
+      <Button
+          android:id="@+id/home_specialty"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawableLeft="@mipmap/home_specialty_small"
+          android:text="特产"
+          android:background="#00000000"
+
+          android:textColor="#ffffff"
+
+          />
+      <Button
+          android:id="@+id/home_folk"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawableLeft="@mipmap/home_folk_small"
+          android:text="民俗"
+          android:textColor="#ffffff"
+          android:background="#00000000"
+          />
+      <Button
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="攻略"
+          android:drawableLeft="@mipmap/home_specialty_small"
+          android:textColor="#ffffff"
+          android:background="#00000000"
+          />
+
+  </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

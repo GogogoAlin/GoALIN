@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#555555"
+    >
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="拍照"
+        android:id="@+id/button1"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从照片中取出一张照片"
+        android:layout_margin="10dp"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="取消"
+        android:background="#108E01"
+        android:id="@+id/button3"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

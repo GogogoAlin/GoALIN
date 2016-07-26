@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="150dp"
+
+    android:layout_height="150dp">
+    <ImageView
+        android:id="@+id/iv_logo_hotel"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        >
+        <TextView
+            android:id="@+id/shopName_tv_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="111"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/shopHours_tv_hotel"
+            android:layout_below="@id/shopName_tv_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="111"
+            android:lines="1"
+
+            />
+        <TextView
+            android:id="@+id/averagePrice_tv_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:lines="1"
+            android:text="111"
+            android:layout_below="@id/shopHours_tv_hotel"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/categoryName_tv_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lines="1"
+            android:layout_below="@id/averagePrice_tv_hotel"
+            />
+        <TextView
+            android:id="@+id/goodAppraiseNum_tv_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/categoryName_tv_hotel"
+            android:layout_alignParentEnd="true"
+            android:lines="1"
+            android:layout_toEndOf="@+id/categoryName_tv_hotel"
+            android:layout_below="@+id/averagePrice_tv_hotel"
+            android:layout_alignBottom="@+id/categoryName_tv_hotel" />
+        <TextView
+            android:id="@+id/distance_tv_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lines="1"
+            android:layout_toRightOf="@id/averagePrice_tv_hotel"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/shopName_tv_hotel"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>

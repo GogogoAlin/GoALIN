@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+         />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5">
+
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="111"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/shopHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopName"
+            android:lines="1"
+            android:text="111"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/averagePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopHours"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:text="111"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/averagePrice"
+            android:lines="1"
+            android:text="111"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/goodAppraiseNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/categoryName"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/averagePrice"
+            android:layout_toEndOf="@+id/categoryName"
+            android:layout_toRightOf="@id/categoryName"
+            android:lines="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/shopName"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/averagePrice"
+            android:lines="1"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>
