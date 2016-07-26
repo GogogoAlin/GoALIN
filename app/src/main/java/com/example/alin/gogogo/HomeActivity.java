@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -169,6 +170,15 @@ public class HomeActivity extends AppCompatActivity implements SlindingOnClickCa
         menu.setBehindCanvasTransformer(mTransformer);
         //为侧滑菜单设置布局
         menu.setMenu(R.layout.leftmenu);
+        LinearLayout linearLayout = (LinearLayout) menu.findViewById(R.id.mydetail);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,HomeActivity.class);
+                intent.putExtra("id",4);
+                startActivity(intent);
+            }
+        });
     }
 
     /***
