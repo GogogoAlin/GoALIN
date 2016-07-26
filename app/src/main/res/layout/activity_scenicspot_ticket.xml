@@ -7,7 +7,6 @@
     tools:context="com.example.alin.gogogo.activity.ScenicspotTicket"
     >
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"

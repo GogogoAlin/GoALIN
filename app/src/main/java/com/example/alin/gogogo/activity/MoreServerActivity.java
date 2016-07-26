@@ -60,6 +60,7 @@ public class MoreServerActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.gift:
                 intent = new Intent(this,NativegiftActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(intent);
                 break;
             case R.id.infor:
