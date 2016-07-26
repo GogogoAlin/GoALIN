@@ -105,9 +105,10 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!--<activity android:name=".mineActivity.Label" />-->
-        <!--<activity android:name=".mineActivity.MyInfo" />-->
-        <!--<activity android:name=".mineActivity.UpdataPassword"></activity>-->
+        <activity android:name="mineActivity.Label"></activity>
+        <activity android:name="mineActivity.MyInfo"></activity>
+        <activity android:name="mineActivity.UpdataPassword"></activity>
+        <activity android:name=".activity.AboutActivitys"></activity>
     </application>
 
 </manifest>
