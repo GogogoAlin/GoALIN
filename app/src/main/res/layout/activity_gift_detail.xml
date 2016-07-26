@@ -5,35 +5,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.alin.gogogo.activity.GiftDetailActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:background="#108E01">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/input_blessing_back"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:id="@+id/input_blessing_back"
             android:clickable="true"
             android:src="@mipmap/input_blessing_left" />
+
         <ImageView
+            android:id="@+id/iv_top_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:id="@+id/iv_top_share"
             android:clickable="true"
             android:src="@mipmap/top_share" />
+
         <ImageView
+            android:id="@+id/iv_my_collection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/iv_top_share"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:id="@+id/iv_my_collection"
+            android:layout_toLeftOf="@+id/iv_top_share"
             android:clickable="true"
             android:src="@mipmap/my_collection" />
 
@@ -44,8 +51,9 @@
             android:gravity="center"
             android:text="礼品详情"
             android:textColor="#ffffff"
-            android:textSize="18sp" />
+            android:textSize="23sp" />
     </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -71,9 +79,11 @@
                     android:layout_gravity="bottom"
                     android:alpha="0.5"
                     android:background="#000000">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="30dp">
+
                         <TextView
                             android:id="@+id/tv_faguantouku_giftdetail"
                             android:layout_width="wrap_content"
@@ -101,19 +111,19 @@
                     android:id="@+id/tv_price_detailgift"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
                     android:text="hahaha"
 
-                   />
+                    />
+
                 <Button
                     android:id="@+id/btn_order_giftdetail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#EE6A50"
-                    android:text="订购"
                     android:layout_marginLeft="230dp"
-                    />
+                    android:background="#EE6A50"
+                    android:text="订购" />
             </LinearLayout>
 
             <RelativeLayout
@@ -155,14 +165,13 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F0F0F0"
-                >
+                android:background="#F0F0F0">
+
                 <TextView
                     android:id="@+id/produce_tv_good"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="hhahhjkjkjjjdkjkkkkkkjk"
-                    />
+                    android:text="hhahhjkjkjjjdkjkkkkkkjk" />
             </RelativeLayout>
 
             <LinearLayout
@@ -186,14 +195,13 @@
                     android:layout_marginLeft="10dp"
                     android:text="秦淮礼物" />
 
-              <Button
-                  android:id="@+id/btn_goshop_giftdetail"
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="进入店铺"
-                  android:background="#108E01"
-                  android:layout_marginLeft="180dp"
-                  />
+                <Button
+                    android:id="@+id/btn_goshop_giftdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:background="#108E01"
+                    android:text="进入店铺" />
             </LinearLayout>
 
             <RelativeLayout
@@ -236,15 +244,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CCCCC"
-                android:visibility="gone"
-                />
+                android:visibility="gone" />
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="#F0F0F0">
-            </RelativeLayout>
+                android:background="#F0F0F0"></RelativeLayout>
 
             <LinearLayout
                 android:id="@+id/layout_pics"
@@ -283,6 +289,7 @@
                 android:background="#F0F0F0">
 
             </RelativeLayout>
+
             <LinearLayout
                 android:id="@+id/layout_recall_giftdetail"
                 android:layout_width="match_parent"
@@ -316,11 +323,13 @@
 
         </LinearLayout>
     </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:orientation="horizontal">
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

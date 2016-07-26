@@ -1,90 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:background="#108E01">
-
-    <Button
-    android:id="@+id/homecatory_back_native"
-    android:layout_width="30dp"
     android:layout_height="match_parent"
-    android:layout_margin="15dp"
-        android:background="@mipmap/back"
+    android:orientation="vertical">
 
-        android:onClick="onClick"
-        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#108E01">
 
-    <TextView
-    android:id="@+id/gogo"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:text="特产礼品"
-    android:textColor="#ffffff"
-    android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/homecatory_back_native"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingBottom="11dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:src="@mipmap/back" />
 
-    <Button
-    android:id="@+id/search"
-    android:layout_width="30dp"
-    android:layout_height="30dp"
-    android:layout_alignParentEnd="true"
-    android:layout_centerVertical="true"
-    android:layout_marginRight="10dp"
-    android:background="@mipmap/home_find"
-        />
+        <TextView
+            android:id="@+id/gogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="特产礼品"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/home_find" />
     </RelativeLayout>
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
 
-    <Spinner
-    android:id="@+id/whole_city"
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:entries="@array/nanjing" />
+        <Spinner
+            android:id="@+id/whole_city"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/nanjing" />
 
-    <Spinner
-    android:id="@+id/whole_theme"
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:entries="@array/nativrgift_theme" />
+        <Spinner
+            android:id="@+id/whole_theme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/nativrgift_theme" />
 
-    <Spinner
-    android:id="@+id/cornerprice"
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:entries="@array/whole" />
+        <Spinner
+            android:id="@+id/cornerprice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/whole" />
     </LinearLayout>
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="40dp">
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
 
-    <TextView
-    android:id="@+id/myposition"
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="2dp"
-    android:layout_weight="10"
-    android:gravity="center|left"
-    android:hint="正在获取您的位置..." />
+        <TextView
+            android:id="@+id/myposition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="10"
+            android:gravity="center|left"
+            android:hint="正在获取您的位置..." />
 
-    <Button
-    android:id="@+id/refresh"
-    android:layout_width="20dp"
-    android:layout_height="20dp"
-    android:layout_marginRight="10dp"
-    android:background="@mipmap/set_up_refresh"
-        />
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/set_up_refresh" />
 
     </LinearLayout>
 

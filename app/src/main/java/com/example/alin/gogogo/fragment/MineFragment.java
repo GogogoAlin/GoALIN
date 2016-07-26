@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -27,7 +28,7 @@ import mineActivity.UpdataPassword;
 
 public class MineFragment extends Fragment {
     private Intent intent;
-    private Button btn;
+    private ImageView btn;
     private View view;
     private SlindingOnClickCallback callback;
     private Button btn_load, btn_commit, btn_order, btn_collect, LogInSucess;
@@ -122,7 +123,7 @@ public class MineFragment extends Fragment {
         LogInSucess = (Button) view.findViewById(R.id.Login_sucess);//登陆
         textview = (TextView) view.findViewById(R.id.textView6);//提醒登陆
 
-        btn = (Button) view.findViewById(R.id.sliding_mine);//侧滑
+        btn = (ImageView) view.findViewById(R.id.sliding_mine);//侧滑
         btn_commit = (Button) view.findViewById(R.id.commit_mine);//注册
         exit = (Button) view.findViewById(R.id.exit);//推出登陆
 

@@ -13,9 +13,14 @@
 
         <ImageView
             android:id="@+id/iv_sence_guide_back"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
             android:src="@mipmap/back" />
 
@@ -26,7 +31,7 @@
             android:layout_centerInParent="true"
             android:text="景点导游"
             android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:textSize="23sp" />
 
         <Button
             android:id="@+id/search"
@@ -35,13 +40,12 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:background="@mipmap/guide_map_three_d"
-            />
+            android:background="@mipmap/guide_map_three_d" />
     </RelativeLayout>
 
     <ListView
+        android:id="@+id/lv_sence_guide"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/lv_sence_guide"></ListView>
+        android:layout_height="match_parent"></ListView>
 
 </LinearLayout>

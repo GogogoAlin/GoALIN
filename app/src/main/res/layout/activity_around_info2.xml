@@ -13,10 +13,14 @@
 
         <ImageView
             android:id="@+id/iv_collection_sliding_activity"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
             android:src="@mipmap/back" />
 
@@ -26,7 +30,7 @@
             android:layout_centerInParent="true"
             android:text="周边"
             android:textColor="#ffffff"
-            android:textSize="17sp"></TextView>
+            android:textSize="23sp"></TextView>
         <Button
             android:layout_width="35dp"
             android:layout_height="35dp"
@@ -41,7 +45,7 @@
     <RadioGroup
         android:id="@+id/rg_collection_ac"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 
@@ -51,7 +55,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
-
+android:textSize="20sp"
             android:gravity="center"
             android:text="酒店" />
 
@@ -61,6 +65,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
+            android:textSize="20sp"
             android:gravity="center"
             android:text="美食" />
 
@@ -69,6 +74,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:button="@null"
             android:gravity="center"
             android:text="休闲" />
@@ -79,6 +85,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
+            android:textSize="20sp"
             android:gravity="center"
             android:text="特产" />
     </RadioGroup>

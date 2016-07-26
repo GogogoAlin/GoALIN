@@ -73,8 +73,8 @@ public class SenceDetailActivity extends AppCompatActivity {
     private DbManager dbManager;
     private ScenicDBUtil scenicDBUtil;
     private List<DBScinceBean> list = new ArrayList<>();
-    private DBScinceBean dbScinceBean=new DBScinceBean();
-    private String  url="http://m.51zouyizou.com/zouyizou_app/actionDispatcher.do?reqUrl=viewspotContent&reqMethod=queryDesc&shopId=";
+    private DBScinceBean dbScinceBean = new DBScinceBean();
+    private String url = "http://m.51zouyizou.com/zouyizou_app/actionDispatcher.do?reqUrl=viewspotContent&reqMethod=queryDesc&shopId=";
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -101,9 +101,9 @@ public class SenceDetailActivity extends AppCompatActivity {
         btn_surrend_senceDetail_fragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(SenceDetailActivity.this,AroundInfo.class);
-                intent.putExtra("longitude",d.getLongitude());
-                intent.putExtra("latitude",d.getLatitude());
+                Intent intent = new Intent(SenceDetailActivity.this, AroundInfo.class);
+                intent.putExtra("longitude", d.getLongitude());
+                intent.putExtra("latitude", d.getLatitude());
                 startActivity(intent);
 
 
@@ -114,16 +114,16 @@ public class SenceDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                RequestParams params=new RequestParams(url+d.getShopId());
+                RequestParams params = new RequestParams(url + d.getShopId());
                 x.http().get(params, new Callback.CommonCallback<String>() {
                     @Override
                     public void onSuccess(String result) {
 
 
-                        Intent intent=new Intent(SenceDetailActivity.this,DetailWebView.class);
+                        Intent intent = new Intent(SenceDetailActivity.this, DetailWebView.class);
                         Detail detail = new Gson().fromJson(result, Detail.class);
                         String detailD = detail.getD();
-                        intent.putExtra("detail",detailD);
+                        intent.putExtra("detail", detailD);
                         startActivity(intent);
 
                     }
@@ -148,7 +148,6 @@ public class SenceDetailActivity extends AppCompatActivity {
             }
         });
     }
-
 
 
     //各种监听事件的设置
@@ -187,17 +186,17 @@ public class SenceDetailActivity extends AppCompatActivity {
                 dbScinceBean.setShopHours(d.getShopHours());
                 dbScinceBean.setImgList(d.getImgList().get(0));
                 ScenicDBUtil.getInstance().addScenicBean(dbScinceBean);
-                Toast.makeText(SenceDetailActivity.this,"收藏成功",Toast.LENGTH_SHORT).show();
+                Toast.makeText(SenceDetailActivity.this, "收藏成功", Toast.LENGTH_SHORT).show();
             }
         });
         //交通按钮的跳转监听事件
         btn_translation_senceDetail_fragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SenceDetailActivity.this,TranslationActivity.class);
+                Intent intent = new Intent(SenceDetailActivity.this, TranslationActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("DBean",d);
-                intent.putExtra("bundle",bundle);
+                bundle.putSerializable("DBean", d);
+                intent.putExtra("bundle", bundle);
                 startActivity(intent);
             }
         });
@@ -206,8 +205,8 @@ public class SenceDetailActivity extends AppCompatActivity {
         btn_pics_senceDetail_fragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SenceDetailActivity.this,PictureShowActivity.class);
-                intent.putExtra("shopId",d.getShopId());
+                Intent intent = new Intent(SenceDetailActivity.this, PictureShowActivity.class);
+                intent.putExtra("shopId", d.getShopId());
                 startActivity(intent);
             }
         });
@@ -262,7 +261,7 @@ public class SenceDetailActivity extends AppCompatActivity {
         // titleUrl是标题的网络链接，仅在人人网和QQ空间使用
         oks.setTitleUrl("http://sharesdk.cn");
         // text是分享文本，所有平台都需要这个字段
-        oks.setText("我是分享文本");
+        oks.setText("我是走一走旅游");
         // imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
         //oks.setImagePath("/sdcard/test.jpg");//确保SDcard下面存在此张图片
         // url仅在微信（包括好友和朋友圈）中使用
@@ -274,7 +273,7 @@ public class SenceDetailActivity extends AppCompatActivity {
         // siteUrl是分享此内容的网站地址，仅在QQ空间使用
         oks.setSiteUrl("http://sharesdk.cn");
 
-// 启动分享GUI
+        // 启动分享GUI
         oks.show(this);
     }
 

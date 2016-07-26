@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -23,7 +24,7 @@ import java.util.List;
 
 public class CameraFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
-    private Button btn;
+    private ImageView btn;
     private SlindingOnClickCallback callback;
 
     private CameraAdapter adapter;
@@ -55,7 +56,7 @@ public class CameraFragment extends Fragment implements SwipeRefreshLayout.OnRef
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_camera, null);
-        btn= (Button) view.findViewById(R.id.camera_btn_back);
+        btn= (ImageView) view.findViewById(R.id.camera_btn_back);
         listview=(ListView)view.findViewById(R.id.camera_lv);
         refrenceLayout= (SwipeRefreshLayout) view.findViewById(R.id.camera_spl);
         refrenceLayout.setOnRefreshListener(this);

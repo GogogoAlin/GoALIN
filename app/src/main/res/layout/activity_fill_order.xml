@@ -7,13 +7,17 @@
     tools:context="com.example.alin.gogogo.activity.FillOrderActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:background="#108E01">
 
         <ImageView
             android:id="@+id/iv_fillorder_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:clickable="true"
@@ -25,7 +29,7 @@
             android:gravity="center"
             android:text="填写订单"
             android:textColor="#ffffff"
-            android:textSize="18sp" />
+            android:textSize="23sp" />
     </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"

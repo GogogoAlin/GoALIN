@@ -2,131 +2,153 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-
     android:layout_height="match_parent"
+
+    android:orientation="vertical"
     tools:context="com.example.alin.gogogo.activity.TranslationActivity">
+
     <RelativeLayout
+        android:id="@+id/head"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/head"
-        android:background="#108E01"
-        >
+        android:background="#108E01">
+
         <ImageView
             android:id="@+id/iv_back_teanslation"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:src="@mipmap/back"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
-            />
+            android:src="@mipmap/back" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="交通出行"
             android:layout_centerInParent="true"
+            android:text="交通出行"
             android:textColor="#ffffff"
-            android:textSize="20sp"
-            />
+            android:textSize="23sp" />
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/left_traffic"
-            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/head"
             android:layout_gravity="center_vertical"
-            android:layout_below="@+id/head"/>
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/left_traffic" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="自驾线路"
             android:layout_gravity="center_vertical"
-            android:textSize="20sp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:text="自驾线路"
+            android:textSize="20sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:background="#F0F0F0"></LinearLayout>
+
     <TextView
+        android:id="@+id/tv_tracfic_self_driving"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_tracfic_self_driving"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
 
-        android:text="self_drive"/>
+        android:text="self_drive" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:background="#F0F0F0"></LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/traffic_bus"
-            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/head"
             android:layout_gravity="center_vertical"
-            android:layout_below="@+id/head"/>
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/traffic_bus" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="公交线路"
             android:layout_gravity="center_vertical"
-            android:textSize="20sp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:text="公交线路"
+            android:textSize="20sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:background="#F0F0F0"></LinearLayout>
+
     <TextView
+        android:id="@+id/tv_bus_route"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_bus_route"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="bus route"/>
+        android:text="bus route" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:background="#F0F0F0"></LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/traffic_subway"
-            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/head"
             android:layout_gravity="center_vertical"
-            android:layout_below="@+id/head"/>
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/traffic_subway" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="地铁线路"
             android:layout_gravity="center_vertical"
-            android:textSize="20sp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:text="地铁线路"
+            android:textSize="20sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:background="#F0F0F0"></LinearLayout>
+
     <TextView
+        android:id="@+id/tv_subway_route"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_subway_route"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="subway route"/>
+        android:text="subway route" />
 
 </LinearLayout>

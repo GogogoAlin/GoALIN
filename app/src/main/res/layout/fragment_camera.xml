@@ -3,47 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.alin.gogogo.fragment.CameraFragment"
-    android:weightSum="1">
-    <LinearLayout
+    android:weightSum="1"
+    tools:context="com.example.alin.gogogo.fragment.CameraFragment">
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="#008B00"
-        >
-        <Button
+        android:layout_height="60dp"
+        android:background="#008B00">
+
+        <ImageView
             android:id="@+id/camera_btn_back"
-            android:layout_width="50dp"
-            android:background="@mipmap/home_category"
-            android:layout_height="wrap_content"
-            />
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:paddingBottom="11dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:src="@mipmap/home_category" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="拍拍"
+            android:layout_centerInParent="true"
             android:layout_marginLeft="120dp"
+            android:text="拍拍"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
-            />
+            android:textSize="23sp" />
+
         <Button
             android:id="@+id/friend_camera"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/taking_pictures_firend"
-            android:layout_marginLeft="100dp"
-            />
-    </LinearLayout>
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/taking_pictures_firend" />
+    </RelativeLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/camera_spl"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/camera_lv"
-            >
-        </ListView>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
     </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

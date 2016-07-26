@@ -1,6 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.alin.gogogo.fragment.HomeFragment">
@@ -8,54 +8,56 @@
     <com.example.alin.gogogo.RefrenceLayout
         android:id="@+id/Refrencelayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
+
         <ListView
             android:id="@+id/listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
     </com.example.alin.gogogo.RefrenceLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00000000"
-        >
+        android:background="#00000000">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/homecatory"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginLeft="8dp"
-                android:src="@mipmap/home_category"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
                 android:clickable="true"
-                />
+                android:paddingBottom="11dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:paddingTop="11dp"
+                android:src="@mipmap/home_category" />
+
             <TextView
+                android:id="@+id/gogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="收藏"
                 android:layout_centerInParent="true"
+                android:text="走一走 旅游"
                 android:textColor="#ffffff"
-                android:textSize="17sp"
-                android:id="@+id/gogo"
-                />
+                android:textSize="17sp" />
+
             <Button
+                android:id="@+id/search"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:id="@+id/search"
-                android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
-                android:background="@mipmap/home_find"
+                android:layout_centerVertical="true"
                 android:layout_marginRight="10dp"
-                />
+                android:background="@mipmap/home_find" />
         </RelativeLayout>
 
     </FrameLayout>
-
 
 
 </FrameLayout>

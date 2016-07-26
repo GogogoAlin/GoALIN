@@ -9,13 +9,17 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:background="#108E01">
 
         <ImageView
             android:id="@+id/input_blessing_left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:clickable="true"
@@ -48,7 +52,7 @@
             android:gravity="center"
             android:text="景点详情"
             android:textColor="#ffffff"
-            android:textSize="18sp" />
+            android:textSize="23sp" />
     </RelativeLayout>
 
     <ScrollView
@@ -116,6 +120,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textSize="20sp"
                     android:background="#00000000"
                     android:drawableTop="@mipmap/sharing_introduce"
                     android:gravity="center"
@@ -126,6 +131,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textSize="20sp"
                     android:background="#00000000"
                     android:drawableTop="@mipmap/sharing_picture"
                     android:gravity="center"
@@ -137,6 +143,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textSize="20sp"
                     android:background="#00000000"
                     android:drawableTop="@mipmap/sharing_side"
                     android:gravity="center"
@@ -145,6 +152,7 @@
                 <Button
                     android:id="@+id/btn_translation_senceDetail_fragment"
                     android:layout_width="0dp"
+                    android:textSize="20sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#00000000"

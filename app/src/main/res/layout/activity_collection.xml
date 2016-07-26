@@ -13,11 +13,15 @@
 
         <ImageView
             android:id="@+id/iv_collection_sliding_activity"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
+            android:paddingBottom="11dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
             android:src="@mipmap/back" />
 
         <TextView
@@ -26,7 +30,7 @@
             android:layout_centerInParent="true"
             android:text="收藏"
             android:textColor="#ffffff"
-            android:textSize="17sp"></TextView>
+            android:textSize="23sp"></TextView>
     </RelativeLayout>
 
     <RadioGroup
@@ -43,7 +47,8 @@
             android:layout_weight="1"
             android:button="@null"
             android:gravity="center"
-            android:text="景点" />
+            android:text="景点"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_hotel_ac"
@@ -51,9 +56,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
-
             android:gravity="center"
-            android:text="酒店" />
+            android:text="酒店"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_food_ac"
@@ -62,7 +67,8 @@
             android:layout_weight="1"
             android:button="@null"
             android:gravity="center"
-            android:text="美食" />
+            android:text="美食"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_relax_ac"
@@ -71,7 +77,8 @@
             android:layout_weight="1"
             android:button="@null"
             android:gravity="center"
-            android:text="休闲" />
+            android:text="休闲"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_local_food_ac"
@@ -80,7 +87,8 @@
             android:layout_weight="1"
             android:button="@null"
             android:gravity="center"
-            android:text="特产" />
+            android:text="特产"
+            android:textSize="18sp" />
     </RadioGroup>
 
     <FrameLayout

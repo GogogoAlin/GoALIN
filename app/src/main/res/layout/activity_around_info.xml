@@ -7,17 +7,21 @@
     tools:context="com.example.alin.gogogo.activity.AroundInfoActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="60dp"
         android:background="#108E01"
         >
         <ImageView
             android:id="@+id/homecatory_back"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:src="@mipmap/back"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
+            android:src="@mipmap/back"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +29,7 @@
             android:text="周边信息"
             android:layout_centerInParent="true"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:id="@+id/gogo"
             />
         <Button
@@ -61,6 +65,7 @@
             android:gravity="center"
             android:drawableLeft="@drawable/map_bank"
             android:text="银行"
+            android:textSize="18sp"
             android:background="#ffffffff"
 
             />
@@ -71,6 +76,7 @@
             android:gravity="center"
             android:drawableLeft="@drawable/map_shopping"
             android:text="购物"
+            android:textSize="18sp"
             android:background="#ffffffff"
 
 
@@ -82,6 +88,7 @@
             android:gravity="center"
             android:drawableLeft="@drawable/map_toilet"
             android:text="厕所"
+            android:textSize="18sp"
             android:background="#ffffffff"
             />
         <Button
@@ -89,6 +96,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:textSize="18sp"
             android:drawableLeft="@drawable/map_more"
             android:text="更多"
             android:background="#ffffffff"
