@@ -77,7 +77,6 @@ public class MoreServerActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.collect:
                 intent = new Intent(this,CollectionActivity.class);
-//                intent.putExtra("id",0);
                 break;
 
         }

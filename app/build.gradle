@@ -27,7 +27,7 @@ android {
    }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support:support-v4:24.0.0'
@@ -43,8 +43,23 @@ dependencies {
     compile files('libs/baidumapapi_util_v4_0_0.jar')
     compile project(':slidingmenu_library')
     compile project(':pullToRefresh_Library')
-    compile name:'SMSSDK-2.1.1',ext:'aar'
-    compile name:'SMSSDKGUI-2.1.1',ext:'aar'
+    compile name: 'SMSSDK-2.1.1', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.1.1', ext: 'aar'
     compile files('libs/MobCommons-2016.0714.1402.jar')
     compile files('libs/MobTools-2016.0714.1402.jar')
+    compile files('libs/ShareSDK-Facebook-2.7.4.jar')
+    compile files('libs/ShareSDK-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-Email-2.7.4.jar')
+    compile files('libs/MobCommons-2016.0707.1708.jar')
+    compile files('libs/MobTools-2016.0707.1708.jar')
+    compile files('libs/ShareSDK-QQ-2.7.4.jar')
+    compile files('libs/ShareSDK-QZone-2.7.4.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.7.4.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.4.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.7.4.jar')
+    compile files('libs/ShareSDK-Twitter-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.4.jar')
 }

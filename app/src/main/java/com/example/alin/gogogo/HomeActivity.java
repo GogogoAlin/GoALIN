@@ -3,10 +3,13 @@ package com.example.alin.gogogo;
 import android.content.Intent;
 import android.graphics.Canvas;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -15,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.alin.gogogo.fragment.CameraFragment;
 import com.example.alin.gogogo.fragment.CollectionFragment;
@@ -35,6 +39,36 @@ public class HomeActivity extends AppCompatActivity implements SlindingOnClickCa
     private int current = 2;
     private FragmentManager manager;
     private SlidingMenu menu;
+    private static boolean isExit = false;
+    Handler mHandler = new Handler() {
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            isExit = false;
+        }
+    };
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exit();
+            return false;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+    private void exit() {
+        if (!isExit) {
+            isExit = true;
+            Toast.makeText(getApplicationContext(), "再按一次退出程序",
+                    Toast.LENGTH_SHORT).show();
+            // 利用handler延迟发送更改状态信息
+            mHandler.sendEmptyMessageDelayed(0, 2000);
+        } else {
+            finish();
+            System.exit(0);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,35 +89,13 @@ public class HomeActivity extends AppCompatActivity implements SlindingOnClickCa
         int id = intent.getIntExtra("id", 2);
         switch (id) {
             case 3:
-
-                View inflate = LayoutInflater.from(this).inflate(R.layout.fragment_camera, null);
-                Button iv_back= (Button) inflate.findViewById(R.id.camera_btn);
-                iv_back.setBackgroundResource(R.mipmap.back);
-                iv_back.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        finish();
-                    }
-                });
                 buttons[3].setChecked(true);
                 break;
             case 0:
-
-                View inflate1 = LayoutInflater.from(this).inflate(R.layout.collection_fragment_layout, null);
-                ImageView iv_back1= (ImageView) inflate1.findViewById(R.id.iv_collection_sliding);
-                iv_back1.setImageResource(R.mipmap.back);
-                iv_back1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        finish();
-                    }
-                });
                 buttons[0].setChecked(true);
                 break;
             case 4:
-
                 buttons[4].setChecked(true);
-
                 break;
 
 
