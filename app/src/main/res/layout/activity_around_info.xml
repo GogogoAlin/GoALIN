@@ -69,12 +69,14 @@
         android:orientation="horizontal"
         >
         <Button
+            android:id="@+id/bank"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:gravity="center"
             android:drawableLeft="@drawable/map_bank"
             android:text="银行"
+            android:onClick="onClick"
             android:textSize="18sp"
             android:background="#ffffffff"
 

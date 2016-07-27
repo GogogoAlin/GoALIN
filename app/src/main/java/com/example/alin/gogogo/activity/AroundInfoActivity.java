@@ -44,12 +44,18 @@ public class AroundInfoActivity extends AppCompatActivity {
     private double lon;
     private TextView lo;
 
+    //POi检索
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SDKInitializer.initialize(getApplicationContext());
         setContentView(R.layout.activity_around_info);
+        //poi检索
+
+
+
         mMapView = (MapView) findViewById(R.id.bmapView);
         homecatory_back= (ImageView) findViewById(R.id.homecatory_back);
         homecatory_back.setOnClickListener(new View.OnClickListener() {
@@ -98,6 +104,14 @@ public class AroundInfoActivity extends AppCompatActivity {
         mLocationClient.setLocOption(option);
     }
 
+    public void onClick(View view) {
+        switch(view.getId()){
+            case R.id.bank:
+
+
+                break;
+        }
+    }
 
 
     public class MyLocationListener implements BDLocationListener {

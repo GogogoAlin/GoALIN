@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -34,6 +36,7 @@ public class SenceGuideActivity extends AppCompatActivity {
     private SenceGuideAdapter adapter;
     @ViewInject(R.id.iv_sence_guide_back)
     private ImageView iv_sence_guide_back;
+    private View view;
     private List<VoiceGuide.DBean.RowsBean> rowsBeanList=new ArrayList<>();
     private Handler handler = new Handler() {
         @Override
@@ -50,6 +53,10 @@ public class SenceGuideActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         x.view().inject(this);
+        view= LayoutInflater.from(this).inflate(R.layout.voice_guide_listview_item_layout,null);
+        Button down = (Button) view.findViewById(R.id.btn_download_voice_guide);
+        Button play=(Button)view.findViewById(R.id.btn_play_voice_guide);
+
 
         initData();
         listener();

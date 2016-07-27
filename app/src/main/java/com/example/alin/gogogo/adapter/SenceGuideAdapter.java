@@ -5,12 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.alin.gogogo.R;
 import com.example.alin.gogogo.bean.VoiceGuide;
 
+import org.xutils.http.RequestParams;
 import org.xutils.x;
 
 import java.util.List;
@@ -23,6 +25,7 @@ public class SenceGuideAdapter extends BaseAdapter {
     private List<VoiceGuide.DBean.RowsBean> rowsBeanList;
     private Context context;
     private LayoutInflater inflater;
+    private RequestParams Params;
 
     public SenceGuideAdapter(List<VoiceGuide.DBean.RowsBean> rowsBeanList, Context context) {
         this.rowsBeanList = rowsBeanList;
@@ -55,7 +58,10 @@ public class SenceGuideAdapter extends BaseAdapter {
             holder.tv_comments= (TextView) view.findViewById(R.id.tv_comments_voice_guide);
             holder.tv_distance= (TextView) view.findViewById(R.id.tv_distance);
             holder.tv_size= (TextView) view.findViewById(R.id.tv_size_voice_guide);
+            holder.btn_download_voice_guide=(Button)view.findViewById(R.id.btn_download_voice_guide);
+            holder.btn_play_voice_guide=(Button)view.findViewById(R.id.btn_play_voice_guide);
             view.setTag(holder);
+
         }
         else holder= (ViewHolder) view.getTag();
         VoiceGuide.DBean.RowsBean rowsBean = rowsBeanList.get(i);
@@ -71,5 +77,6 @@ public class SenceGuideAdapter extends BaseAdapter {
     class ViewHolder {
         public ImageView imageView;
         public TextView tv_comments, tv_size, tv_distance;
+        public Button btn_download_voice_guide,btn_play_voice_guide;
     }
 }
