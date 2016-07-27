@@ -64,6 +64,7 @@ public class FillOrderActivity extends AppCompatActivity {
         x.view().inject(this);
          //修改订单数
         setListener();
+
         btn_tijiao_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

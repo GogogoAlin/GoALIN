@@ -23,7 +23,6 @@ public class MoreServerActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.more_server_layout);
         more_iv= (ImageView) findViewById(R.id.iv_more);
         more_iv.setOnClickListener(this);
-        initView();
         more_iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,12 +31,6 @@ public class MoreServerActivity extends AppCompatActivity implements View.OnClic
         });
         
     }
-
-    private void initView() {
-
-    }
-
-    
     //点击返回
     @Override
     public void onClick(View view) {
@@ -60,6 +53,7 @@ public class MoreServerActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.gift:
                 intent = new Intent(this,NativegiftActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(intent);
                 break;
             case R.id.infor:
@@ -77,9 +71,7 @@ public class MoreServerActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.collect:
                 intent = new Intent(this,CollectionActivity.class);
-//                intent.putExtra("id",0);
                 break;
-
         }
         startActivity(intent);
     }

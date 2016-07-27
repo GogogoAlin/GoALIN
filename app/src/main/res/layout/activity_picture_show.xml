@@ -7,16 +7,20 @@
     tools:context="com.example.alin.gogogo.activity.PictureShowActivity">
 
     <RelativeLayout
-        android:id="@+id/head"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#108E01">
 
         <ImageView
             android:id="@+id/iv_back_picture_show"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
             android:src="@mipmap/back" />
 
@@ -26,7 +30,7 @@
             android:layout_centerInParent="true"
             android:text="图片展示"
             android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:textSize="23sp" />
 
         <ImageView
             android:id="@+id/iv_camera_picture_show"
@@ -39,36 +43,33 @@
     </RelativeLayout>
 
     <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
         android:id="@+id/rg_picture_show"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:orientation="horizontal">
+
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:button="@null"
+            android:gravity="center"
             android:text="默认图片"
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
+
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:button="@null"
-            android:text="网友上传"
             android:gravity="center"
-            android:layout_gravity="center_vertical"
-            android:textSize="20sp"
-            />
+            android:text="网友上传"
+            android:textSize="20sp" />
 
     </RadioGroup>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#000000"></LinearLayout>
+
 
     <FrameLayout
         android:id="@+id/fl_picture_show"

@@ -55,8 +55,6 @@ public class SenceFragment extends Fragment {
         View view = inflater.inflate(R.layout.sence_fragment_layout, null);
         pullToRefreshListView = (PullToRefreshListView) view.findViewById(R.id.pull_listView_sence);
         loadData();
-
-
         return view;
     }
 

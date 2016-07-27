@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -27,7 +28,7 @@ import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 
 public class CommitActivity extends AppCompatActivity {
-    private Button back_btn;
+    private ImageView back_btn;
     private RadioGroup rg_select;
     private RadioButton menbtn,womenbtn;
     private EditText PhoneNumber;//手机号
@@ -184,7 +185,13 @@ public class CommitActivity extends AppCompatActivity {
 
     private void initView() {
         rg_select=(RadioGroup)findViewById(R.id.rg_commit);
-        back_btn = (Button) findViewById(R.id.commit_back);
+        back_btn = (ImageView) findViewById(R.id.commit_back);
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         PhoneNumber = (EditText) findViewById(R.id.commit_phone_et);
         VertifyCode = (EditText) findViewById(R.id.login_check_et);
         nickName = (EditText) findViewById(R.id.niname_et);

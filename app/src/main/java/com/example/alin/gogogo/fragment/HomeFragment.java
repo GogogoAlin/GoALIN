@@ -49,9 +49,9 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     private homenanjin nanjin;
     private Nanjinadapter adapter;
     private ImageView iv;
-    private Button ticket_bt;
-    private Button guide_bt, voice_btn;
-    private Button moreserver_bt;
+    private ImageView ticket_bt;
+    private ImageView guide_bt, voice_btn;
+    private ImageView moreserver_bt;
     private SlindingOnClickCallback callback;
     private TextView tv_citys_header;
 
@@ -87,7 +87,7 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         view1 = inflater.inflate(R.layout.refreshheaderview, null);
         tv_citys_header = (TextView) view1.findViewById(R.id.tv_citys_header);
-        voice_btn = (Button) view1.findViewById(R.id.voice);
+        voice_btn = (ImageView) view1.findViewById(R.id.voice);
         buttonsearch=(Button)view.findViewById(R.id.search);
         buttonsearch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -193,9 +193,9 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     }
 
     private void initview() {
-        ticket_bt = (Button) view1.findViewById(R.id.ticket);
-        guide_bt = (Button) view1.findViewById(R.id.guild_3d);
-        moreserver_bt = (Button) view1.findViewById(R.id.more_service);
+        ticket_bt = (ImageView) view1.findViewById(R.id.ticket);
+        guide_bt = (ImageView) view1.findViewById(R.id.guild_3d);
+        moreserver_bt = (ImageView) view1.findViewById(R.id.more_service);
     }
 
 

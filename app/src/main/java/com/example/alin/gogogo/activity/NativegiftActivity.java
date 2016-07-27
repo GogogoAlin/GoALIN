@@ -24,6 +24,7 @@ import org.xutils.x;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class NativegiftActivity extends AppCompatActivity {
 
     private PullToRefreshListView refreshListView;
@@ -31,6 +32,7 @@ public class NativegiftActivity extends AppCompatActivity {
     private List<NativegiftBean.DBean.RowsBean>  rowsBeenList;
     private List<NativegiftBean.DBean.RowsBean> cureenList;
     private NativegiftAdapter adapter;
+
     private Handler handler=new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -51,7 +53,7 @@ public class NativegiftActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nativegift);
 
-        refreshListView=(PullToRefreshListView)findViewById(R.id.pull_listView_city);
+        refreshListView=(PullToRefreshListView)this.findViewById(R.id.pull_listView_city);
         refreshListView.setMode(PullToRefreshBase.Mode.BOTH);
         cureenList=new ArrayList<>();
         adapter=new NativegiftAdapter(cureenList,NativegiftActivity.this);
@@ -61,9 +63,9 @@ public class NativegiftActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                        Intent intent=new Intent(NativegiftActivity.this,GiftDetailActivity.class);
-                        intent.putExtra("shopId",cureenList.get(i-1).getGoodsId());
-                        startActivity(intent);
+                Intent intent=new Intent(NativegiftActivity.this,GiftDetailActivity.class);
+                intent.putExtra("shopId",cureenList.get(i-1).getGoodsId());
+                startActivity(intent);
             }
         });
         refreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
@@ -118,8 +120,8 @@ public class NativegiftActivity extends AppCompatActivity {
     }
 
     private void initdata() {
-        RequestParams params=new RequestParams(Cans.nativeProduct+PageNo+ Cans.nativeProductlast);
 
+        RequestParams params=new RequestParams(Cans.nativeProduct+PageNo+ Cans.nativeProductlast);
         x.http().get(params, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
@@ -153,26 +155,16 @@ public class NativegiftActivity extends AppCompatActivity {
 
 
 
-    }
+}
 
-    public void Clickbt(View view){
+    public void onClick(View view) {
         switch (view.getId()){
-            case R.id.homecatory_back :
+
+            case R.id.homecatory_back_native :
                 finish();
                 break;
-            case R.id.search:
-
-                break;
-            case R.id.refresh:
-
-                break;
-
-
 
         }
 
-
-
     }
-
 }

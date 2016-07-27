@@ -10,96 +10,95 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#108E01"
-        >
+        android:background="#108E01">
+
         <ImageView
             android:id="@+id/homecatory_back"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:src="@mipmap/back"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
-            />
+            android:src="@mipmap/back" />
+
         <TextView
+            android:id="@+id/gogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="酒店客栈"
             android:layout_centerInParent="true"
+            android:text="酒店客栈"
             android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:id="@+id/gogo"
-            />
+            android:textSize="23sp" />
+
         <Button
+            android:id="@+id/search"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/search"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
-            android:background="@mipmap/home_find"
+            android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:onClick="Clickbt"
-            />
+            android:background="@mipmap/home_find"
+            android:onClick="Clickbt" />
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <Spinner
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
             android:id="@+id/whole_city"
-            android:entries="@array/nanjing"
-            />
-        <Spinner
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:entries="@array/nanjing" />
+
+        <Spinner
             android:id="@+id/whole_theme"
-            android:entries="@array/level"
-            />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/level" />
+
         <Spinner
             android:id="@+id/whole"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:entries="@array/whole"
-            />
+            android:entries="@array/whole" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp">
+
         <TextView
             android:id="@+id/myposition"
             android:layout_width="0dp"
-            android:layout_weight="10"
             android:layout_height="match_parent"
-            android:hint="正在获取您的位置..."
-            android:gravity="center|left"
             android:layout_marginLeft="2dp"
-            />
+            android:layout_weight="10"
+            android:gravity="center|left"
+            android:hint="正在获取您的位置..." />
+
         <Button
             android:id="@+id/refresh"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginRight="10dp"
-            android:onClick="Clickbt"
             android:background="@mipmap/set_up_refresh"
-            />
+            android:onClick="Clickbt" />
 
     </LinearLayout>
 
     <com.handmark.pulltorefresh.library.PullToRefreshListView
         android:id="@+id/pull_listView_hotel_activity"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-    </com.handmark.pulltorefresh.library.PullToRefreshListView>
-
-
+        android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
 
 
 </LinearLayout>

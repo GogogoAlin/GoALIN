@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:background="#108E01">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="8dp"
             android:id="@+id/iv_order_sliding"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
             android:src="@mipmap/home_category" />
 
@@ -23,12 +28,13 @@
             android:layout_centerInParent="true"
             android:text="订单"
             android:textColor="#ffffff"
-            android:textSize="17sp"></TextView>
+            android:textSize="23sp"></TextView>
     </RelativeLayout>
+
     <RadioGroup
         android:id="@+id/rg_order"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 
@@ -38,6 +44,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
+            android:textSize="20sp"
             android:gravity="center"
             android:text="订购订单" />
 
@@ -46,6 +53,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:button="@null"
             android:gravity="center"
             android:text="预约订单" />

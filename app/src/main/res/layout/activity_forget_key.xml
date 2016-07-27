@@ -5,28 +5,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.alin.gogogo.activity.ForgetKeyActivity">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="#008B00"
         >
-        <Button
+        <ImageView
             android:id="@+id/forget_back"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:background="@mipmap/back"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+
+            android:src="@mipmap/back"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="忘记密码"
             android:textColor="@android:color/white"
             android:layout_marginLeft="120dp"
-            android:textSize="20sp"
+            android:textSize="23sp"
             />
-    </LinearLayout>
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"

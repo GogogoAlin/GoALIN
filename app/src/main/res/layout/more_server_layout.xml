@@ -2,175 +2,178 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-    <LinearLayout
-        android:id="@+id/linear_more"
+    android:orientation="vertical">
 
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#008B00"
-        >
+        android:background="#008B00">
+
         <ImageView
             android:id="@+id/iv_more"
             android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@mipmap/back"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
-            />
+            android:src="@mipmap/back" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="更多服务"
             android:layout_gravity="center_vertical"
-            android:textSize="20sp"
-            android:textColor="@android:color/white"
             android:layout_marginLeft="100dp"
-            />
-    </LinearLayout>
+            android:text="更多服务"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/jingdian"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/home_attraction_tickets"
-            android:text="景点门票"
             android:background="@null"
+            android:drawableTop="@mipmap/home_attraction_tickets"
             android:onClick="onClick"
-            />
+            android:text="景点门票" />
+
         <Button
             android:id="@+id/guide"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:gravity="center"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/home_voice_guide"
-            android:text="语音导航"
             android:background="@null"
+            android:drawableTop="@mipmap/home_voice_guide"
+            android:gravity="center"
             android:onClick="onClick"
-            />
+            android:text="语音导航" />
+
         <Button
             android:id="@+id/daolan"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:drawableTop="@mipmap/more_service_3d_tour"
-            android:text="3D导览"
             android:layout_weight="1"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_3d_tour"
             android:onClick="onClick"
-            />
+            android:text="3D导览" />
+
         <Button
             android:id="@+id/route"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:drawableTop="@mipmap/more_service_line_strategy"
-            android:text="线路攻略"
             android:layout_weight="1"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_line_strategy"
             android:onClick="onClick"
-            />
+            android:text="线路攻略" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/hotel"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/more_service_hotel"
-            android:text="酒店客栈"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_hotel"
             android:onClick="onClick"
-            />
+            android:text="酒店客栈" />
+
         <Button
             android:id="@+id/littlefood"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:gravity="center"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/more_service_food"
-            android:text="美食小吃"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_food"
+            android:gravity="center"
             android:onClick="onClick"
-            />
+            android:text="美食小吃" />
+
         <Button
             android:id="@+id/entertainment"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:drawableTop="@mipmap/more_service_entertainment"
-            android:text="休闲娱乐"
             android:layout_weight="1"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_entertainment"
             android:onClick="onClick"
-            />
+            android:text="休闲娱乐" />
+
         <Button
             android:id="@+id/gift"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:drawableTop="@mipmap/more_service_gift"
-            android:text="特产礼品"
             android:layout_weight="1"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_gift"
             android:onClick="onClick"
-            />
+            android:text="特产礼品" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/infor"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/more_service_surrounding_information"
-            android:text="周边信息"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_surrounding_information"
             android:onClick="onClick"
-            />
+            android:text="周边信息" />
+
         <Button
             android:id="@+id/camera"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:gravity="center"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/more_service_camera"
-            android:text="边走边拍"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_camera"
+            android:gravity="center"
             android:onClick="onClick"
-            />
+            android:text="边走边拍" />
+
         <Button
             android:id="@+id/collect"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:drawableTop="@mipmap/more_service_my_attention"
-            android:text="我的收藏"
             android:layout_weight="1"
             android:background="@null"
+            android:drawableTop="@mipmap/more_service_my_attention"
             android:onClick="onClick"
-            />
+            android:text="我的收藏" />
+
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="60dp"
-            android:background="@null"
-            />
+            android:layout_weight="1"
+            android:background="@null" />
     </LinearLayout>
 
 

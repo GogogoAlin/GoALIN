@@ -1,78 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.example.alin.gogogo.activity.SearchActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#108E01"
-        >
+        android:background="#108E01">
+
         <ImageView
             android:id="@+id/homecatory_back"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:src="@mipmap/back"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
             android:onClick="Clickbt"
-            />
+            android:src="@mipmap/back" />
+
         <android.support.v7.widget.SearchView
+            android:id="@+id/search"
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:background="#ffffff"
-            android:textSize="26sp"
-            app:defaultQueryHint="景点"
             android:layout_margin="10dp"
+            android:background="#ffffff"
             android:searchHintIcon="@mipmap/search"
-            android:id="@+id/search"
-            />
+            android:textSize="26sp"
+            app:defaultQueryHint="景点" />
+
         <Button
+            android:id="@+id/more"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/more"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
-            android:background="@mipmap/home_scanning"
+            android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:onClick="Clickbt"
-            />
+            android:background="@mipmap/home_scanning"
+            android:onClick="Clickbt" />
     </RelativeLayout>
+
     <GridView
         android:id="@+id/gridview"
-        android:numColumns="4"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="220dp">
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        android:numColumns="4">
 
     </GridView>
-<ListView
 
-    android:id="@+id/history_Listview"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    >
+    <ListView
 
-</ListView>
+        android:id="@+id/history_Listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        >
+        android:layout_height="40dp">
+
         <Button
             android:id="@+id/clear"
-            android:background="#00000000"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="清除历史记录"
-            android:textSize="26sp"
+            android:background="#00000000"
             android:onClick="Clickbt"
-            />
+            android:text="清除历史记录"
+            android:textSize="23sp" />
 
     </FrameLayout>
 

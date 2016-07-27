@@ -56,7 +56,6 @@ public class CollectionFragment extends Fragment {
         //添加数据
         loadData();
         return view;
-
     }
 
     private void loadData() {
@@ -74,14 +73,8 @@ public class CollectionFragment extends Fragment {
 
     private void initFragment() {
         SenceFragment senceFragment = new SenceFragment();
-        HotelFragment hotelFragment = new HotelFragment();
-        FoodFragment foodFragment = new FoodFragment();
-        RelaxaFragment relaxaFragment = new RelaxaFragment();
         LocationFragment locationFragment = new LocationFragment();
         list.add(senceFragment);
-        list.add(hotelFragment);
-        list.add(foodFragment);
-        list.add(relaxaFragment);
         list.add(locationFragment);
 
         manager = getFragmentManager();
@@ -124,6 +117,4 @@ public class CollectionFragment extends Fragment {
             }
         });
     }
-
-
 }

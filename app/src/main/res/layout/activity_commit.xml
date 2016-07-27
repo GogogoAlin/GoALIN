@@ -5,32 +5,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.alin.gogogo.activity.CommitActivity">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
+        android:layout_height="60dp"
         android:background="#008B00"
-        android:weightSum="1">
-        <Button
+        >
+        <ImageView
             android:id="@+id/commit_back"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:gravity="center"
             android:onClick="onClick"
-            android:layout_margin="10dp"
-            android:background="@mipmap/back"
-            android:layout_weight="0.02" />
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@mipmap/back"
+             />
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
             android:text="注册"
-            android:layout_gravity="center"
-            android:textColor="@android:color/white"
-            android:layout_marginLeft="140dp"
-            android:textSize="20sp"
-            />
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
 
-    </LinearLayout>
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"

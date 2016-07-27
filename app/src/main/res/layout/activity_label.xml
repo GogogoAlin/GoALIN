@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#008B00"
+        >
+        <Button
+            android:id="@+id/laod_back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:layout_margin="15dp"
+            android:background="@mipmap/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义标签"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </ListView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="#888888"
+    >
+    <EditText
+        android:id="@+id/input_et"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:hint="请输入标签内容"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:id="@+id/add_bt"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#008B00"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:text="增加"
+        android:onClick="onClick"
+        />
+</LinearLayout>
+
+</LinearLayout>
