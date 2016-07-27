@@ -2,6 +2,7 @@ package com.example.alin.gogogo.application;
 
 import android.app.Application;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.example.alin.gogogo.utils.DBLocationDBUtils;
 import com.example.alin.gogogo.utils.PreOrderDBUtils;
 import com.example.alin.gogogo.utils.ScenicDBUtil;
@@ -20,6 +21,7 @@ public class Myapp extends Application {
         x.Ext.init(this);
         x.Ext.setDebug(true);
         loadDB();
+
     }
     private void loadDB() {
         DbManager.DaoConfig daoConfig = new DbManager.DaoConfig();
