@@ -72,8 +72,6 @@
             android:drawableLeft="@drawable/map_shopping"
             android:text="购物"
             android:background="#ffffffff"
-
-
             />
         <Button
             android:layout_width="0dp"

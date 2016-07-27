@@ -1,9 +1,6 @@
 package com.example.alin.gogogo.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -15,14 +12,8 @@ import android.widget.Toast;
 
 import com.example.alin.gogogo.R;
 import com.example.alin.gogogo.bean.DBPreOrder;
-import com.example.alin.gogogo.bean.DBScinceBean;
-import com.example.alin.gogogo.bean.GiftDetail;
-import com.example.alin.gogogo.fragment.order_inner_fragment.PreOrderFragment;
-import com.example.alin.gogogo.utils.DBLocationDBUtils;
 import com.example.alin.gogogo.utils.PreOrderDBUtils;
-import com.example.alin.gogogo.utils.ScenicDBUtil;
 
-import org.xutils.DbManager;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
@@ -100,10 +91,12 @@ public class FillOrderActivity extends AppCompatActivity {
         price2=Double.parseDouble(price);
         tv_goodsname.setText(goodsname);
         tv_price.setText("单价为:¥"+price);
+
         et_num.setText("1");//数量为1
         count=Integer.parseInt(et_num.getText().toString());
         double price1 = Double.parseDouble(price);
         tv_allPrice.setText(price+"元");
+        tv_pay.setText(price+"元");
         iv_fillorder_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

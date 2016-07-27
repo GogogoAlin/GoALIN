@@ -19,6 +19,7 @@ import com.example.alin.gogogo.R;
 import com.example.alin.gogogo.activity.AboutActivity;
 import com.example.alin.gogogo.activity.CollectionActivity;
 import com.example.alin.gogogo.activity.CommitActivity;
+import com.example.alin.gogogo.activity.SettingActivity;
 import com.example.alin.gogogo.myinterface.SlindingOnClickCallback;
 
 public class MineFragment extends Fragment {
@@ -31,7 +32,7 @@ public class MineFragment extends Fragment {
     private String username, password, phonenumber, sex;
     private TextView textview;
     private Button exit;
-    private LinearLayout camera_linear,about_linear;
+    private LinearLayout camera_linear,about_linear,setting_linear;
     public void setCallback(SlindingOnClickCallback callback) {
         this.callback = callback;
     }
@@ -128,6 +129,7 @@ public class MineFragment extends Fragment {
 
         camera_linear= (LinearLayout) view.findViewById(R.id.camera_linear);
         about_linear= (LinearLayout) view.findViewById(R.id.about_linear);
+        setting_linear= (LinearLayout) view.findViewById(R.id.setting_linear);
 
 
     }
@@ -171,6 +173,13 @@ public class MineFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 intent =new Intent(getActivity(), AboutActivity.class);
+                startActivity(intent);
+            }
+        });
+        setting_linear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent =new Intent(getActivity(), SettingActivity.class);
                 startActivity(intent);
             }
         });
