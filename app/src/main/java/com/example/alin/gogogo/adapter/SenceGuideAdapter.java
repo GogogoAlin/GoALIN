@@ -70,6 +70,15 @@ public class SenceGuideAdapter extends BaseAdapter {
         holder.tv_size.setText(rowsBean.getSize());
         holder.tv_distance.setText(rowsBean.getDistance());
         x.image().bind(holder.imageView,rowsBean.getImg());
+        Params=new RequestParams(rowsBeanList.get(i).getUrl());
+
+        holder.btn_download_voice_guide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+        });
 
         return view;
     }

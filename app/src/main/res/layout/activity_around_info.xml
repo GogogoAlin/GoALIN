@@ -90,6 +90,8 @@
             android:text="购物"
             android:textSize="18sp"
             android:background="#ffffffff"
+
+
             />
         <Button
             android:layout_width="0dp"

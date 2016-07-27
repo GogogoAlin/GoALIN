@@ -10,20 +10,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.alin.gogogo.HomeActivity;
 import com.example.alin.gogogo.LoginActivity;
 import com.example.alin.gogogo.R;
-import com.example.alin.gogogo.activity.AboutActivity;
+import com.example.alin.gogogo.activity.AboutActivitys;
 import com.example.alin.gogogo.activity.CollectionActivity;
 import com.example.alin.gogogo.activity.CommitActivity;
 import com.example.alin.gogogo.myinterface.SlindingOnClickCallback;
 
+import mineActivity.Label;
+import mineActivity.MyInfo;
+import mineActivity.UpdataPassword;
+
 public class MineFragment extends Fragment {
     private Intent intent;
-    private Button btn;
+    private ImageView btn;
     private View view;
     private SlindingOnClickCallback callback;
     private Button btn_load, btn_commit, btn_order, btn_collect, LogInSucess;
@@ -118,7 +123,7 @@ public class MineFragment extends Fragment {
         LogInSucess = (Button) view.findViewById(R.id.Login_sucess);//登陆
         textview = (TextView) view.findViewById(R.id.textView6);//提醒登陆
 
-        btn = (Button) view.findViewById(R.id.sliding_mine);//侧滑
+        btn = (ImageView) view.findViewById(R.id.sliding_mine);//侧滑
         btn_commit = (Button) view.findViewById(R.id.commit_mine);//注册
         exit = (Button) view.findViewById(R.id.exit);//推出登陆
 
@@ -128,6 +133,10 @@ public class MineFragment extends Fragment {
 
         camera_linear= (LinearLayout) view.findViewById(R.id.camera_linear);
         about_linear= (LinearLayout) view.findViewById(R.id.about_linear);
+        lable_linear=(LinearLayout)view.findViewById(R.id.lable_linear);
+        infor_linear=(LinearLayout)view.findViewById(R.id.infor_linear);
+        key_linear=(LinearLayout)view.findViewById(R.id.key_linear);
+
 
 
     }
@@ -196,13 +205,5 @@ public class MineFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        setting_linear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                intent =new Intent(getActivity(), SettingActivity.class);
-                startActivity(intent);
-            }
-        });
-
     }
 }

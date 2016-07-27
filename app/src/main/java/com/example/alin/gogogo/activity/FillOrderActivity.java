@@ -92,7 +92,6 @@ public class FillOrderActivity extends AppCompatActivity {
         price2=Double.parseDouble(price);
         tv_goodsname.setText(goodsname);
         tv_price.setText("单价为:¥"+price);
-
         et_num.setText("1");//数量为1
         count=Integer.parseInt(et_num.getText().toString());
         double price1 = Double.parseDouble(price);
